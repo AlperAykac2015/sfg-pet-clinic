@@ -5,9 +5,7 @@ workflows:
   maven_test:
     jobs:
       - maven/test: # checkout, build, test, and upload test results
-          command: '-X package'
-          command: '-X verify'
-          command: '-X test'
+          command: '-X package \n -X verify \n -X test'
   #maven_test:
     #jobs:
       - maven/test # checkout, build, test, and upload test results
